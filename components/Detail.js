@@ -25,10 +25,10 @@ export default function Detail({navigation, route}) {
       <Image style={styles.img} source={{uri:datas.strDrinkThumb}}/>
       <Text style={{marginTop:15, color:'#fff', fontSize:25}}>{datas.strInstructions}</Text>
       <Text style={{marginTop:15, color:'#fff', fontSize:30}}>IGRIDIENTS</Text>
-      <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strIngredient1}</Text>
-      <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strIngredient2}</Text>
-      <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strIngredient3}</Text>
-      <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strIngredient4}</Text>
+      <Text style={{marginTop:10, color:'#504bdd', fontSize:20}} onPress={() => navigation.navigate('Ingridient', { name:datas.strIngredient1 })} >{datas.strIngredient1}</Text>
+      <Text style={{marginTop:10, color:'#504bdd', fontSize:20}} onPress={() => navigation.navigate('Ingridient', { name:datas.strIngredient2 })}>{datas.strIngredient2}</Text>
+      <Text style={{marginTop:10, color:'#504bdd', fontSize:20}} onPress={() => navigation.navigate('Ingridient', { name:datas.strIngredient3 })}>{datas.strIngredient3}</Text>
+      <Text style={{marginTop:10, color:'#504bdd', fontSize:20}} onPress={() => navigation.navigate('Ingridient', { name:datas.strIngredient4 })}>{datas.strIngredient4}</Text>
       <Text style={{marginTop:15, color:'#fff', fontSize:30}}>Measure</Text>
       <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strMeasure1}</Text>
       <Text style={{marginTop:10, color:'#fff', fontSize:20}}>{datas.strMeasure2}</Text>
@@ -43,7 +43,7 @@ export default function Detail({navigation, route}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#123',
     
   },
   
